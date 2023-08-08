@@ -11,7 +11,7 @@ function createNewFile(listItem) {
         var newFileItem = document.createElement("li");
         newFileItem.textContent = newFileName;
         newFileItem.setAttribute("data-filename", newFileName);
-        newFileItem.innerHTML = `<i class="fas fa-file"></i> <span>${newFileName}</span> + 
+        newFileItem.innerHTML = `<i class="fas fa-file"></i> <span>${newFileName}</span>
         <button class="toggler" onclick="handleDelete(this.parentNode)"><i class="fas fa-trash-alt"></i></button>`;
         fileList.appendChild(newFileItem);
     }
