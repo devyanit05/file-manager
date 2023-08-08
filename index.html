@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>File Manager</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="title-container">
+            <h1 class="title">File Manager</h1>
+            <div class="title-underline"></div>
+        </div>
+        <div class="actions-container">
+            <div class="search-box">
+                <input type="text" class="form-control" id="filenameInput" placeholder="Search file/folder">
+                <button class="btn btn-primary btn-custom" id="searchBtn">
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+            <div class="add-files">
+                <p>Add files and folders</p>
+                <button class="btn btn-warning" id="newFileBtn">
+                    <i class="fas fa-file"></i> New File
+                </button>
+                <button class="btn btn-danger"  id="newFolderBtn">
+                    <i class="fas fa-folder"></i> New Folder
+                </button>
+            </div>
+        </div>
+        <div class="divider"></div>
+        <ul class="file-list">
+            <!-- <li data-filename="sample-file.txt">
+                <i class="fas fa-file"></i>
+                <span>sample-file.txt</span>
+                <button class="action-btn rename-btn">
+                    <i class="fas fa-pencil-alt"></i>
+                </button>
+                <button class="action-btn delete-btn">
+                    <i class="fas fa-trash-alt"></i>
+                </button>
+            </li> -->
+        </ul>
+    </div>
+    <script src="app.js"></script>
+    <script src="utils.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/388154ff95.js" crossorigin="anonymous"></script>
+    <title>File Manager</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="title">File Manager</h1>
+        <br>
+        <div class="search-box">
+            <input type="text" class="form-control" id="filenameInput" placeholder="Enter file/folder name">
+            <button class="btn btn-primary" id="submitBtn">
+                <i class="fa-solid fa-circle-check"></i>
+            </button>
+        </div>
+        <div class="create-main">
+            <!-- <p>Create new file or folder</p> -->
+            <button class="btn btn-primary" id="submitBtn">
+            <i class="fa-solid fa-file-circle-plus"></i>
+            </button>
+        </div>
+        <br><br><hr><br><br>
+        <div class="file-holder">
+            <ul>
+
+            </ul>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
+
+----------------------------------------------------------------------------------------------------
+
+.search-box {
+    width: 40%; 
+    display: flex;
+    right: 100px;
+    /* justify-content: flex-end; */
+    position: absolute;
+}
+
+.form-control {
+    border-radius: 0;
+    /* border-top-right-radius: 0.25rem;
+    border-bottom-right-radius: 0.25rem; */
+}
+
+.btn-primary {
+    border-radius: 0;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .file-manager-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.file-manager-title:after {
+    content: "";
+    display: block;
+    width: 40px;
+    height: 3px;
+    background-color: #ff6969;
+    position: absolute;
+    bottom: -8px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.file-manager-container {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+} */
+
+------------------------------------------------------------------------------------------------------------
+
+document.getElementById("submitBtn").addEventListener("click", function () {
+    var filename = document.getElementById("filenameInput").value;
+    if (filename !== "") {
+        // Perform file/folder submission logic here
+        
+        alert("Submitted: " + filename);
+    } else {
+        alert("Please enter a valid file/folder name.");
+    }
+});
